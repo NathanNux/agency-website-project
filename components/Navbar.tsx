@@ -38,7 +38,7 @@ interface NavbarProps {
           <Link className="cursor-pointer" href="/">
             <Image
               priority
-              src="/logo2.svg"
+              src="/logo/logo2.svg"
               alt="Logo"
               width={100}
               height={100}

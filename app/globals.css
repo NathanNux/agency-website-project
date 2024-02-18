@@ -74,3 +74,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .slider-image {
+    @apply transition-all duration-700 ease-in-out;
+  }
+
+  .slider-image:hover {
+    @apply transform scale-105;
+  }
+}
