@@ -31,6 +31,10 @@ interface NavbarProps {
         setIsDropDownVisible(false);
     }
 
+    const handleNavigation = (sectionId: string) => {
+      localStorage.setItem('sectionToScrollTo', sectionId);
+    }
+
   return (
     <div>
       <div className="p-6 md:p-10 flex items-center justify-between z-50">
@@ -54,12 +58,12 @@ interface NavbarProps {
                 bg-gradient-to-b from-neutral-50
                 to bg-neutral-400 bg-opacity-50"
         >
-            <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">Website Design</div>
-            <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">Graphic Design</div>
-            <div onClick={scrollToShopifyStores} className="hover:text-gray-50">Shopify Stores</div>
-            <div onClick={scrollToBrands} className="hover:text-gray-50">Brands</div>
+            <div onClick={() => {scrollToWebsiteDesign(); handleNavigation('websiteDesign');}} className="hover:text-gray-50">Webový Design</div>
+            <div onClick={() => {scrollToGraphicDesign(); handleNavigation('graphicDesign');}} className="hover:text-gray-50">Grafický Design</div>
+            <div onClick={() => {scrollToShopifyStores(); handleNavigation('shopifyStores');}} className="hover:text-gray-50">Vývoj Obchodů</div>
+            <div onClick={() => {scrollToBrands(); handleNavigation('brands');}} className="hover:text-gray-50">Aplikace</div>
             <Link href="/pricing" className="hover:text-gray-50">
-                Pricing
+                Ceník
             </Link>
         </div>
 
@@ -90,7 +94,7 @@ interface NavbarProps {
                 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
                 focus:ring-offset-slate-50 hover:border-slate-400 hover:text-slate-200"
             >
-                Contact
+                Kontakt
             </Link>
         </div>
       </div>

@@ -35,78 +35,68 @@ const SliderOne = () => {
         <div>
             <Slider {...settings}>
                 <>
-                <div className="rounded-md px-2 md:p-10">
-                    <Image
-                    priority
-                    src="/images/business.jpeg"
-                    alt="logo"
-                    width={500}
-                    height={500}
-                    className="
-                        rounded-2xl slider-image
-                            "
-                    />
-                </div>
+                    <div className="rounded-md px-2 md:p-10 flex justify-center">
+                        <Image
+                            priority
+                            src="/images/business.jpeg"
+                            alt="logo"
+                            width={500}
+                            height={500}
+                            className="rounded-2xl slider-image"
+                        />
+                    </div>
                 </>
 
                 <>
-                <div className="rounded-md px-2 md:p-10">
-                    <Image
-                    priority
-                    src="/images/coffe.jpeg"
-                    alt="logo"
-                    width={500}
-                    height={500}
-                    className="
-                        rounded-2xl slider-image 
-                            "
-                    />
-                </div>
+                    <div className="rounded-md px-2 md:p-10 flex justify-center">
+                        <Image
+                            priority
+                            src="/images/coffe.jpeg"
+                            alt="logo"
+                            width={500}
+                            height={500}
+                            className="rounded-2xl slider-image"
+                        />
+                    </div>
                 </>
 
                 <>
-                <div className="rounded-md px-2 md:p-10">
-                    <Image
-                    priority
-                    src="/images/small-business-3.webp"
-                    alt="logo"
-                    width={500}
-                    height={500}
-                    className="
-                        rounded-2xl slider-image 
-                            "
-                    />
-                </div>
+                    <div className="rounded-md px-2 md:p-10 flex justify-center">
+                        <Image
+                            priority
+                            src="/images/small-business-3.webp"
+                            alt="logo"
+                            width={500}
+                            height={500}
+                            className="rounded-2xl slider-image"
+                        />
+                    </div>
                 </>
 
                 <>
-                <div className="rounded-md px-2 md:p-10">
-                    <Image
-                    priority
-                    src="/images/man.jpeg"
-                    alt="logo"
-                    width={500}
-                    height={500}
-                    className="
-                        rounded-2xl slider-image 
-                            "
-                    />
-                </div>
+                    <div className="rounded-md px-2 md:p-10 flex justify-center">
+                        <Image
+                            priority
+                            src="/images/man.jpeg"
+                            alt="logo"
+                            width={500}
+                            height={500}
+                            className="rounded-2xl slider-image"
+                        />
+                    </div>
                 </>
 
                 <>
-                <div className="rounded-md px-2 md:p-10">
-                    <Image
-                    priority
-                    src="/images/image-business.jpeg"
-                    alt="logo"
-                    width={500}
-                    height={500}
-                    className="
-                        rounded-2xl slider-image 
-                            "
-                    />
-                </div>
+                    <div className="rounded-md px-2 md:p-10 flex justify-center">
+                        <Image
+                            priority
+                            src="/images/image-business.jpeg"
+                            alt="logo"
+                            width={500}
+                            height={500}
+                            className="rounded-2xl slider-image"
+                        />
+                    </div>
                 </>
             </Slider>
         </div>
