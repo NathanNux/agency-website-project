@@ -14,7 +14,7 @@ import { PiCheckLight, PiSmiley } from "react-icons/pi";
 import Navbar from "@/components/Navbar";
 import { useRouter } from "next/navigation";
 import { useEffect } from 'react'
-import { getGlobalState } from '../state';
+import { useGlobalState } from '../state';
 import GlobalStateContext from '../GlobalStateContext'
 
 

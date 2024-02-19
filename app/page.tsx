@@ -12,7 +12,7 @@ import Brands from './brands';
 import Services from './services';
 import FAQS from './faq';
 import { InfiniteMovingCardsDemo } from './snippets/infinite-moving-card-snippet';
-import { getGlobalState, getScrollFunctionForSectionId } from './state';
+import { useGlobalState, getScrollFunctionForSectionId } from './state';
 import  GlobalStateContext  from './GlobalStateContext';
 
 export default function Home() {

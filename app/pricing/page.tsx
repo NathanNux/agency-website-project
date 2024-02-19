@@ -10,7 +10,7 @@ import DropDownMenu from "@/components/Drop-down-menu";
 import Navbar from "@/components/Navbar";
 import { useRouter } from "next/navigation";
 import { useEffect } from 'react'
-import { getGlobalState } from '../state';
+import { useGlobalState } from '../state';
 import GlobalStateContext from '../GlobalStateContext'
 
 const plans = [
