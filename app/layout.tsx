@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Head from 'next/head';
 
 const font = Poppins({
    subsets: ["latin"],
@@ -20,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="../public/centrumfavicon.ico" />
+      </Head>
       <body className={font.className}>
         <Analytics />
         {children}
